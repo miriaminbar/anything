@@ -13,22 +13,24 @@ struct ContentView: View {
         NavigationStack {
             
             VStack {
-            Text("homepage.")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .padding()
-                .toolbar(){
-                    NavigationLink(destination:SecondView()) {
-                        Text("click me")
-                }
+                Text("homepage.")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .padding()
+                    .toolbar(){
+                        NavigationLink(destination:SecondView()) {
+                            Text("click me")
+                        }
+                    }
             }
-        }
+            //tjis 
             
+        }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
